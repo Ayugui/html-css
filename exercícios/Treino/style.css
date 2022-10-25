@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor-escura: #261F20;
+    --cor-rosa: #EAC9D1;
+    --cor-bege: #F2E8DC;
+    --cor-terra: #A66953;
+    --cor-terra-avermelhada: #A64833;
+
+    --fonte-padrao:  'Merriweather', serif;
+}
+
+header {
+    background-color: var(--cor-escura);
+    text-align: center;
+    color: var(--cor-rosa);
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+header > h1 {
+    font-family: var(--fonte-padrao);
+    font-size: 2.3em;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 250px;
+    min-width: 250px;
+    border-radius: 50%;
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+
