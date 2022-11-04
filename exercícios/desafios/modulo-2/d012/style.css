@@ -4,53 +4,66 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-:root {
-    --fonte-titulo: 'Passion One', arial, sans-serif;
-    --fonte-poema: 'Sriracha', arial, sans-serif; 
-}
-
 * {
     margin: 0px;
     padding: 0px;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 header {
     background-color: black;
-    padding: 50px;
+    color: white;
     text-align: center;
 }
 
-header h1 {
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
     color: white;
-    font-family: var(--fonte-titulo);
-    font-size: 3em;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
-header p {
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(55, 55, 55);
     color: white;
-    font-family: sans-serif;
-    font-weight: lighter;
-    font-size: 0.9em;
-    margin-top: 10px;
 }
 
-main {
-    max-width: 800px;
-    margin: auto;
-    padding: 80px 20px;
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.244);
+    width: 400px;
 }
 
-main p {
-    font-family: var(--fonte-poema);
-    text-align: left;
-    max-width: 50%;
-    font-size: 1.4em;
-}
-
-p#textoespecial {
-    background-color: rgba(0, 0, 0, 0.171);
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
     padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.13);
-    color: white;
 }
