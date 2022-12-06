@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uso de iframes</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      iframe {
+        width: 95vw;
+        border: 2px solid black;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Faça uma escolha</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil reiciendis
+      laborum ab provident voluptates, corrupti exercitationem doloribus
+      pariatur alias laudantium, itaque voluptatum adipisci eos quaerat
+      consequuntur in accusantium, hic odit? Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Obcaecati dolore at voluptatum? Voluptatem
+      iusto nam nesciunt consequatur ab illo molestias, sapiente, aperiam
+      provident totam, ipsa animi. Labore enim aliquam quia?
+    </p>
+
+    <ul>
+      <li><a href="paginas-extras/pagina001.html" target="frame">Primeira página</a></li>
+      <li><a href="paginas-extras/pagina002.html" target="frame">Segunda página</a></li>
+      <li><a href="paginas-extras/pagina003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam aut, qui
+      reiciendis voluptatum dolore dicta? Quibusdam, mollitia eum veritatis
+      aliquam et reprehenderit, tempora soluta quae repellat, nemo rem eaque
+      amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+      pariatur commodi nisi tempora at excepturi corrupti optio quo inventore
+      error placeat, earum provident sapiente molestiae omnis! Suscipit
+      aspernatur deleniti eligendi.
+    </p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1>" name="frame">
+      <p>Infelizmente seu navegador não é compatível</p>
+    </iframe>
+
+    <!-- srcdoc = dá pra colocar código html aqui dentro -->
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente earum
+      consectetur voluptates soluta laborum itaque cupiditate, obcaecati quidem
+      eum odit eveniet corporis illo aspernatur ipsa? Nihil suscipit hic aliquid
+      facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+      consequatur qui dolorem, minus facere ipsam laborum deserunt iste incidunt
+      recusandae rem vitae impedit doloribus obcaecati, voluptatem quaerat.
+      Sunt, officia provident.
+    </p>
+  </body>
+</html>

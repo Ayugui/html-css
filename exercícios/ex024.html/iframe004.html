@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto repellendus non sapiente quidem minima doloremque aperiam, provident esse error reiciendis soluta! Qui dolorum nemo, enim in corporis quibusdam repellat eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea et tenetur ducimus soluta dolores enim minus exercitationem voluptatum quasi, mollitia, explicabo pariatur minima, quam vitae accusantium magni illo. Omnis, necessitatibus?</p>
+
+    <iframe src="paginas-extras/pagina004.html" frameborder="1" sandbox="sandbox" referrerpolicy="no-referrer">
+        <p>Seu navegador não é compatível</p>
+    </iframe>
+
+    <!-- Sandbox bloqueia funcionalidades potencialmente maliciosas dos sites que foram usados no iframe. Cria proteção um pouco maior em relação à ataques, o site não captura mais nenhum tipo de informação, por exemplo a do formulário. -->
+
+    <!-- se vc quiser permitir o funcionamento de formulários, use o valor de sandbox como "allow forms" -->
+
+    <!-- O referrerpolicy do tipo no-referrer afirma que o site externo não poderá coletar nenhum tipo de info do seu site -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vero quaerat optio voluptatem, nulla tempora saepe perspiciatis facilis consequatur? Aperiam illum temporibus aliquam officiis amet suscipit ducimus, sequi consectetur alias!</p>
+</body>
+</html>

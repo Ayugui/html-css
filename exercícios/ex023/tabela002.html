@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas grandes</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table {
+        width: 500px;
+        border-collapse: collapse;
+        position: relative;
+      }
+
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+      }
+
+      .num {
+        text-align: right;
+      }
+
+      thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: gray;
+        /* Para fixar cabeçalho da tabela */
+      }
+
+      td,
+      th {
+        padding: 10px;
+        border: 1px solid black;
+      }
+
+      tbody > tr:nth-child(odd) {
+        background-color: lightgray;
+        /* Efeito zebrado 
+           2n (par), 2n-1 (ímpar), odd (ímpar), even (par) */
+      }
+
+      tbody > tr:nth-child(even) {
+        background-color: white;
+        font-weight: bold;
+      }
+
+      thead,
+      tfoot {
+        background-color: gray;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+      <caption>
+        População das unidades federativas
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 100px">População</th>
+
+          <!-- Scope col significa que o "Estado" e a "População" são títulos referentes à coluna -->
+
+          <!-- Scope row significa que o título é referentes à linha -->
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">45 919 049</td>
+        </tr>
+
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td class="num">28 984 923</td>
+        </tr>
+
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">21 764 958</td>
+        </tr>
+
+        <tr>
+          <td>Bahia</td>
+          <td class="num">20 984 785</td>
+        </tr>
+
+        <tr>
+          <td>Paraná</td>
+          <td class="num">18 758 090</td>
+        </tr>
+
+        <tr>
+          <td>Espírito Santo</td>
+          <td class="num">18 784 954</td>
+        </tr>
+
+        <tr>
+          <td>Ceará</td>
+          <td class="num">10 945 378</td>
+        </tr>
+
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num">10 784 532</td>
+        </tr>
+
+        <tr>
+            <td>Amazonas</td>
+            <td class="num">4 983 854</td>
+        </tr>
+
+        <tr>
+            <td>Paraíba</td>
+            <td class="num">4 638 483</td>
+        </tr>
+
+        <tr>
+            <td>Mato Grosso</td>
+            <td class="num">4 573 458</td>
+        </tr>
+
+        <tr>
+            <td>Alagoas</td>
+            <td class="num">3 857 987</td>
+        </tr>
+
+        <tr>
+            <td>Distrito Federal</td>
+            <td class="num">3 015 945</td>
+        </tr>
+
+        <tr>
+            <td>Piauí</td>
+            <td class="num">2 876 234</td>
+        </tr>
+
+        <tr>
+            <td>Mato Grosso do Sul</td>
+            <td class="num">2 758 844</td>
+        </tr>
+
+        <tr>
+            <td>Sergipe</td>
+            <td class="num">2 679 945</td>
+        </tr>
+
+        <tr>
+            <td>Rondônia</td>
+            <td class="num">1 777 986</td>
+        </tr>
+
+        <tr>
+            <td>Tocantins</td>
+            <td class="num">1 424 970</td>
+        </tr>
+
+        <tr>
+            <td>Acre</td>
+            <td class="num">881 904</td>
+        </tr>
+
+        <tr>
+            <td>Roraima</td>
+            <td class="num">605 402</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <th scope="row">Total de habitantes</th>
+        <td class="num"><strong>665 767 879</strong></td>
+      </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In vero voluptate dolore, sequi deserunt alias non nobis reprehenderit delectus libero vitae natus perferendis, expedita praesentium, enim officia repudiandae deleniti pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deserunt sit cumque dolorem sequi ex magnam natus dolorum laudantium, saepe dignissimos voluptates minima quae reiciendis assumenda quibusdam obcaecati amet dolores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis odit voluptatum quidem explicabo cupiditate dolores recusandae nobis doloremque, ipsa quisquam perspiciatis voluptates sint, vel, nihil quas nulla quod earum maiores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore id ipsum eveniet at modi aspernatur quas enim. Maxime iste velit atque sed, at adipisci tempora accusantium? Ex adipisci fugiat aliquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iusto eveniet sed enim laborum ut iure magni soluta. Reprehenderit quaerat facilis id hic quae ut. Cupiditate pariatur fugiat fugit veritatis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In vero voluptate dolore, sequi deserunt alias non nobis reprehenderit delectus libero vitae natus perferendis, expedita praesentium, enim officia repudiandae deleniti pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deserunt sit cumque dolorem sequi ex magnam natus dolorum laudantium, saepe dignissimos voluptates minima quae reiciendis assumenda quibusdam obcaecati amet dolores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis odit voluptatum quidem explicabo cupiditate dolores recusandae nobis doloremque, ipsa quisquam perspiciatis voluptates sint, vel, nihil quas nulla quod earum maiores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore id ipsum eveniet at modi aspernatur quas enim. Maxime iste velit atque sed, at adipisci tempora accusantium? Ex adipisci fugiat aliquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iusto eveniet sed enim laborum ut iure magni soluta. Reprehenderit quaerat facilis id hic quae ut. Cupiditate pariatur fugiat fugit veritatis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In vero voluptate dolore, sequi deserunt alias non nobis reprehenderit delectus libero vitae natus perferendis, expedita praesentium, enim officia repudiandae deleniti pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deserunt sit cumque dolorem sequi ex magnam natus dolorum laudantium, saepe dignissimos voluptates minima quae reiciendis assumenda quibusdam obcaecati amet dolores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis odit voluptatum quidem explicabo cupiditate dolores recusandae nobis doloremque, ipsa quisquam perspiciatis voluptates sint, vel, nihil quas nulla quod earum maiores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore id ipsum eveniet at modi aspernatur quas enim. Maxime iste velit atque sed, at adipisci tempora accusantium? Ex adipisci fugiat aliquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iusto eveniet sed enim laborum ut iure magni soluta. Reprehenderit quaerat facilis id hic quae ut. Cupiditate pariatur fugiat fugit veritatis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In vero voluptate dolore, sequi deserunt alias non nobis reprehenderit delectus libero vitae natus perferendis, expedita praesentium, enim officia repudiandae deleniti pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deserunt sit cumque dolorem sequi ex magnam natus dolorum laudantium, saepe dignissimos voluptates minima quae reiciendis assumenda quibusdam obcaecati amet dolores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis odit voluptatum quidem explicabo cupiditate dolores recusandae nobis doloremque, ipsa quisquam perspiciatis voluptates sint, vel, nihil quas nulla quod earum maiores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore id ipsum eveniet at modi aspernatur quas enim. Maxime iste velit atque sed, at adipisci tempora accusantium? Ex adipisci fugiat aliquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iusto eveniet sed enim laborum ut iure magni soluta. Reprehenderit quaerat facilis id hic quae ut. Cupiditate pariatur fugiat fugit veritatis.</p>
+  </body>
+</html>
